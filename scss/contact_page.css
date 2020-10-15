@@ -409,8 +409,8 @@ html body header #header-inner .logo img {
 
 @media (max-width: 560px) {
   html body header #header-inner .logo img {
-    width: 106px;
-    height: 28px;
+    width: 130px;
+    height: 35px;
   }
 }
 
@@ -760,7 +760,7 @@ html body .mainvisual-wrap {
 
 @media (max-width: 425px) {
   html body .mainvisual-wrap {
-    height: 60vw;
+    height: 78vw;
   }
 }
 
@@ -827,7 +827,7 @@ html body .contact {
 
 @media (max-width: 768px) {
   html body .contact {
-    padding-top: 100px;
+    padding-top: 220px;
   }
 }
 
@@ -844,6 +844,7 @@ html body .contact .form {
   padding: 75px 87px;
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 11px;
   /*text-area*/
   /*btn_area*/
 }
@@ -856,15 +857,15 @@ html body .contact .form {
 
 @media (max-width: 768px) {
   html body .contact .form {
-    width: 85%;
+    width: 84%;
     padding: 55px 47px;
   }
 }
 
 @media (max-width: 560px) {
   html body .contact .form {
-    width: 85%;
-    padding: 25px 30px;
+    width: 89.5%;
+    padding: 25px 25px;
   }
 }
 
@@ -912,6 +913,8 @@ html body .contact .form .text-area p span {
 @media (max-width: 560px) {
   html body .contact .form .text-area p span {
     font-size: 9px;
+    padding: 2px 4px;
+    margin-left: 6px;
   }
 }
 
@@ -972,7 +975,7 @@ html body .contact .form .btn_area {
 
 @media (max-width: 560px) {
   html body .contact .form .btn_area {
-    width: 280px;
+    width: 284px;
   }
 }
 
@@ -1005,6 +1008,13 @@ html body .button-wrap {
   position: relative;
 }
 
+@media (max-width: 560px) {
+  html body .button-wrap {
+    background-image: url(../img/common/contact_sp.png);
+    height: 433px;
+  }
+}
+
 html body .button-wrap .block {
   position: absolute;
   top: 0;
@@ -1029,6 +1039,7 @@ html body .button-wrap .block .letter-block {
 @media (max-width: 560px) {
   html body .button-wrap .block .letter-block {
     padding-top: 62px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1141,12 +1152,20 @@ html body .button-wrap .block .button_block .left_button a {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     font-size: 25px;
+    padding: 20px 0px 14px 0px;
+    height: 80px;
   }
 }
 
 html body .button-wrap .block .button_block .left_button a .time {
   display: block;
   font-size: 15px;
+}
+
+@media (max-width: 560px) {
+  html body .button-wrap .block .button_block .left_button a .time {
+    font-size: 14px;
+  }
 }
 
 html body .button-wrap .block .button_block .right_button {
@@ -1182,6 +1201,8 @@ html body .button-wrap .block .button_block .right_button a {
     font-size: 16px;
     width: 90%;
     margin: 0 auto;
+    padding: 24px 0px;
+    height: 72px;
   }
 }
 
@@ -1258,6 +1279,9 @@ html body .footer .footer_inner .footer_nav_sp .footer_nav_ul_sp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   /*li*/
 }
 
@@ -1271,12 +1295,13 @@ html body .footer .footer_inner .footer_nav_sp .footer_nav_ul_sp li {
   list-style: none;
   font-weight: bold;
   border-right: 1px solid white;
+  font-size: 15px;
 }
 
 html body .footer .footer_inner .footer_nav_sp .footer_nav_ul_sp li a {
   color: white;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
 html body .footer .footer_inner .footer_nav_sp .footer_nav_ul_sp li:last-child {
@@ -1301,6 +1326,7 @@ html body .footer .footer_inner .address {
   html body .footer .footer_inner .address {
     margin-top: 17.5px;
     padding-bottom: 18px;
+    font-size: 13px;
   }
 }
 
@@ -1310,6 +1336,7 @@ html body .footer .footer_inner .address span {
 
 html body .footer .footer_inner .footer_nav {
   margin-top: 26px;
+  width: 100%;
   /*list*/
 }
 
@@ -1336,6 +1363,10 @@ html body .footer .footer_inner .footer_nav .footer_nav_ul li a {
   color: white;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+html body .footer .footer_inner .footer_nav .footer_nav_ul li #first-nav {
+  padding-left: 0px;
 }
 
 html body .footer .footer_inner .footer_nav .footer_nav_ul li:last-child {
@@ -1375,14 +1406,14 @@ html body .footer .footer_inner .map iframe {
 
 @media (max-width: 768px) {
   html body .footer .footer_inner .map iframe {
-    width: 230px;
+    width: 45vw;
     height: 200px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 560px) {
   html body .footer .footer_inner .map iframe {
-    width: 334px;
+    width: 89vw;
     height: 190px;
   }
 }

@@ -108,8 +108,8 @@ header{
       }
 
       @include sp{
-        width: 106px;
-        height: 28px;  
+        width: 130px;
+        height: 35px;  
       }
 
 
@@ -452,7 +452,7 @@ header{
       height: 54vw;
     }
     @include sp-second{
-      height: 60vw;
+      height: 78vw;
     }
 
 
@@ -505,8 +505,6 @@ header{
     }/*center-title*/
 
   }/*&-wrap*/
-  
-
 }
 
 
@@ -520,7 +518,7 @@ header{
 
 
     @include tab{
-      padding-top: 100px;
+      padding-top: 220px;
     }
 
     @include sp{
@@ -535,6 +533,7 @@ header{
         background-color: rgb(255, 255, 255);
         padding: 75px 87px;
         box-shadow: 0px 0px 30px rgba(0,0,0,0.08);
+        border-radius: 11px;
         
         @include pc{
           width: 750px;
@@ -542,13 +541,13 @@ header{
 
 
         @include tab{
-            width: 85%;
+            width: 84%;
             padding: 55px 47px;
         }
 
         @include sp{
-          width: 85%;
-          padding: 25px 30px;
+          width: 89.5%;
+          padding: 25px 25px;
       }
 
 
@@ -588,6 +587,8 @@ header{
 
                     @include sp{
                       font-size: 9px;
+                      padding: 2px 4px;
+                      margin-left:6px;
                     }
                 }/*span*/
             }/*p*/
@@ -644,7 +645,7 @@ header{
             box-shadow: 2px 2px 3px rgba(0,0,0,0.16);
 
             @include sp{
-                width: 280px;
+                width: 284px;
             }
 
             input{
@@ -680,6 +681,11 @@ header{
   margin: 0 auto;
   position: relative;
 
+  @include sp{
+    background-image: url(../img/common/contact_sp.png);
+    height: 433px;
+  }
+
   .block{
     position: absolute;
     top: 0;
@@ -698,6 +704,7 @@ header{
 
     @include sp{
       padding-top: 62px;
+      margin-bottom: 30px;
     }
 
     .sub-letter{
@@ -759,10 +766,7 @@ header{
       display: block;
     }
 
-    #button{
-
-    
-    
+    #button{  
     }
 
     .left_button{
@@ -800,6 +804,8 @@ header{
           border-top-right-radius: 10px;
           border-bottom-right-radius: 10px;  
           font-size: 25px;
+          padding: 20px 0px 14px 0px;
+          height: 80px;
         }
       
     
@@ -812,6 +818,11 @@ header{
           .time{
             display: block;
             font-size: 15px;
+
+            @include sp{
+              font-size: 14px;
+            }
+
           }/*span*/
 
 
@@ -844,6 +855,8 @@ header{
         font-size: 16px;
         width: 90%;
         margin: 0 auto;
+        padding: 24px 0px;
+        height: 72px;
       }
     
     }/*a*/
@@ -907,6 +920,8 @@ background-color: rgba(54,78,96,0.45);
 
         .footer_nav_ul_sp{
           display: flex;
+          justify-content: center;
+
 
           @include sp{
             padding-bottom: 67px;
@@ -916,13 +931,14 @@ background-color: rgba(54,78,96,0.45);
             list-style: none;
             font-weight: bold;
             border-right: 1px solid white;
+            font-size: 15px;
 
             a{
               color: white;
-              padding-right: 15px;
-              padding-left: 15px;
+              padding-right: 25px;
+              padding-left: 25px;
             }
-              
+
         }/*li*/
       
           li:last-child{
@@ -950,7 +966,9 @@ background-color: rgba(54,78,96,0.45);
       @include sp{
         margin-top: 17.5px;
         padding-bottom: 18px;
+        font-size: 13px;
       }
+
       span{
         display: block;
       }/*span*/
@@ -959,6 +977,7 @@ background-color: rgba(54,78,96,0.45);
 
       .footer_nav{
         margin-top: 26px;
+        width: 100%;
 
         @include sp{
           display: none;
@@ -972,12 +991,16 @@ background-color: rgba(54,78,96,0.45);
             font-weight: bold;
             border-right: 1px solid white;
 
+
             a{
               color: white;
               padding-right: 15px;
               padding-left: 15px;
             }
 
+            #first-nav{
+                padding-left: 0px;
+            }
 
   
             
@@ -1003,6 +1026,7 @@ background-color: rgba(54,78,96,0.45);
       }/*copy-right*/
 
       .map{
+
         iframe{
           width: 576px;
           height: 254px;  
@@ -1013,13 +1037,13 @@ background-color: rgba(54,78,96,0.45);
           }/*sp*/
 
           @include tab{
-            width: 230px;
+            width: 45vw;
             height: 200px;    
           }/*sp*/
 
-          @include tab{
-            width: 334px;
-            height:190px;    
+          @include sp{
+            width:89vw;
+            height: 190px;    
           }/*sp*/
 
         }/*iframe*/
