@@ -43,376 +43,397 @@ html{
 body{
   font-family: 'Noto Sans JP', sans-serif;
 
-
-header{
-  position: fixed;
-  z-index: 10;
-  width: 90%;
-  background-color: rgb(255, 255, 255);
-  margin: 0 auto;
-  height: 105px;
-  text-align: center;
-  box-shadow: 2px 2px 24px rgba(0,0,0,0.08);
-  border-radius: 64px;
-  top: 45px;
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-
-  @include pc{
-    width: 95%;
-  }
-
-  @include tab{
-    height: 75px;
-  }
-
-  @include sp{
-    height: 50px;
-    top: 13px;
-  }
-
-
-
-  #header-inner{
-    display: flex;
-    justify-content: space-between;
+  
+  header{
+    position: fixed;
+    z-index: 10;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
     margin: 0 auto;
-    box-sizing: border-box;
-    width: 90.6%;
-    height: 100%;
-    align-items: center;
-
-
+    height: 105px;
+    text-align: center;
+    box-shadow: 2px 2px 24px rgba(0,0,0,0.08);
+    border-radius: 64px;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+  
+    @include pc{
+      width: 95%;
+    }
+  
     @include tab{
+      height: 75px;
     }
-
-
-  @include sp-second{
-
-  }
-   
-    
   
-
-  .logo{
-    
-    img{
-      width: 271.5px;
-      height: 70px;
-
-      @include pc{
-        width: 230px;
-        height: 60px;
-      }
-
-      @include sp{
-        width: 130px;
-        height: 35px;  
-      }
-
-
-      @include sp-second(){
-      }
-
-
+    @include sp{
+      height: 50px;
+      top: 13px;
     }
-
-    .logo_block{
-      text-align: center;
-      margin-left: 15px;
-
-
-      a{
-   
-
-      h1{
-        @include font-type;
-
-        @include pc{
-          font-size: 27px;
-        }
-
-        @include sp{
-          font-size: 24px;
-        }
-
-        @include sp-second(){
-          font-size: 20px;
-        }
-
-      }/*h1*/
-
-      p{
-        font-family: 'Noto Sans JP', sans-serif;
-
-        @include sp-second(){
-          font-size: 12px;
-        }
-
-      }
-
-           
-    }
-
-    }/*block*/
- 
   
-  }/*logo*/
-
-
-
-    .header-nav{
-      @include font-type;
-
-
+  
+  
+    #header-inner{
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      box-sizing: border-box;
+      width: 90.6%;
+      height: 100%;
+      align-items: center;
+  
+  
       @include tab{
-        display: none;
-        width: 100%;
-        color: rgb(0, 0, 0);
-        text-align: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000;
       }
-
+  
+  
+    @include sp-second{
+  
+    }
      
-      ul{
-        display: flex;
-        list-style: none;
-        font-weight: bold;
-        align-items: center;
-
-
-        @include tab{
-          display: inline-block;
-          padding-top: 80px;
-          padding-bottom: 80px;
+      
+    
+  
+    .logo{
+      
+      img{
+        width: 271.5px;
+        height: 70px;
+  
+        @include pc{
+          width: 230px;
+          height: 60px;
         }
-
-        .g-nav{
-          font-size: 20px;
-          letter-spacing: 0.5px;
-          vertical-align: middle;
-          line-height: 67px;
-          transition: 1s;
-          letter-spacing: 0.5px;
-          font-weight: bold;
-
-          @include pc {
+  
+        @include sp{
+          width: 130px;
+          height: 35px;  
+        }
+  
+  
+        @include sp-second(){
+        }
+  
+  
+      }
+  
+      .logo_block{
+        text-align: center;
+        margin-left: 15px;
+  
+  
+        a{
+     
+  
+        h1{
+          @include font-type;
+  
+          @include pc{
+            font-size: 27px;
+          }
+  
+          @include sp{
+            font-size: 24px;
+          }
+  
+          @include sp-second(){
             font-size: 20px;
           }
-
-          @include tab {
-            margin-left: 0px;
+  
+        }/*h1*/
+  
+        p{
+          font-family: 'Noto Sans JP', sans-serif;
+  
+          @include sp-second(){
+            font-size: 12px;
           }
-
-          a{
-            display: block;
-            position: relative;
-            text-decoration: none;      
-            padding: 0px 26px;   
-            
-            @include pc{
-              padding: 0px 18px;   
-            }
-          }
-
-
-        }/*g-nav*/
-
-        .g-nav:hover{
-
-         a{
-           opacity: 0.7;
-           transition: .3s;
-          }
-
+  
         }
-
-
-        .nav-btn{
-          font-size: 16px;
-          width: 100%;
-          transition: 1s;
-          width: 207px;
-          margin-left: 26px;
-
-          @include pc {
-            font-size: 1.1em;
-            margin-left: 18px;
-          }
-
-          @include tab {
-            margin-left: 0px;
-          }
-
-
-          a{
-            display: block;
-            color: rgb(255, 255, 255);
-            background: linear-gradient(to right, #FF2E47, #FFAD88);
-            padding: 20px 66px 16px 66px;
-            display: block;
-            transition: 0.6s;
-            padding: 20px 0px 16px 0px;    
-            text-align: center; 
-            border-radius: 30px;
-            box-shadow: 2px 2px 3px rgba(0,0,0,0.16);
-            letter-spacing: 0.4px;
-    
-        
-            
-            @include pc {
-              padding: 15px 45px;
-              margin-top:auto; 
-              margin-bottom: auto;
-            }
-
-        
-
-          }/*a*/
-
-            a:hover{
-              opacity: 0.7;
-              transition: 0.6s;
-            }/*a*/
-
-        }/*nav-btn*/
-
-        .nav-btn:hover{
-          transition: 1s;
-        }
-
-
-        
-      }/*ul*/
-    }/*header-nav*/
-
-
-
-
-.btn-gnavi{
-
-  display: none;
-
-  @include tab{
-    display: initial;
-      position: fixed;
-      top: 25px;
-      right: 4%;
-      width: 30px;
-      height: 24px;
-      z-index: 4;
-      cursor: pointer;
-      transition: all 400ms;
-      -webkit-transition:all 400ms;
-  }
-
-  @include sp{
-    top: 20px;
-  }
-
-
-}
-
-
-.btn-gnavi{
-  z-index: 1000;
-
-  @include sp-second{
-
-  }
+  
+             
+      }
+  
+      }/*block*/
    
-
-
-  span{
-      @include tab{
-          position: absolute;
-          height: 3px;
-          background: black;
-          -webkit-transition: all 400ms;
-          transition: all 400ms;
-          right: 0;
-        }
-
-        @include sp-second{
-          width: 45px;
-        }
+    
+    }/*logo*/
   
-}/*span*/
-
-  span:nth-of-type(1){
-
-      @include tab{
+  
+  
+      .header-nav{
+        @include font-type;
+  
+  
+        @include tab{
+          display: none;
+          width: 100%;
+          color: rgb(0, 0, 0);
+          height: 100vh;
+          background-color: #ffffff;
+          text-align: center;
+          position: fixed;
           top: 0;
+          left: 0;
           z-index: 1000;
-          width: 40px;
-      }
 
-      @include sp{
-        width: 17px;
+        }
+  
+       
+        ul{
+          display: flex;
+          list-style: none;
+          font-weight: bold;
+          align-items: center;
+  
+  
+          @include tab{
+            display: inline-block;
+            padding-top: 80px;
+            padding-bottom: 80px;
+          }
+
+          #drawer-home{
+            display: none;
+            @include tab{
+              display: block;
+            }
+          }
+  
+          .g-nav{
+            font-size: 20px;
+            letter-spacing: 0.5px;
+            vertical-align: middle;
+            line-height: 67px;
+            transition: 1s;
+            letter-spacing: 0.5px;
+            font-weight: bold;
+  
+            @include pc {
+              font-size: 20px;
+            }
+  
+            @include tab {
+              margin-left: 0px;
+            }
+  
+            a{
+              display: block;
+              position: relative;
+              text-decoration: none;      
+              padding: 0px 26px;   
+              
+              @include pc{
+                padding: 0px 18px;   
+              }
+
+            }
+  
+  
+          }/*g-nav*/
+  
+          .g-nav:hover{
+  
+           a{
+             opacity: 0.7;
+             transition: .3s;
+            }
+  
+          }
+  
+  
+          .nav-btn{
+            font-size: 16px;
+            width: 100%;
+            transition: 1s;
+            width: 207px;
+            margin-left: 26px;
+  
+            @include pc {
+              font-size: 1.1em;
+              margin-left: 18px;
+            }
+  
+            @include tab {
+              margin-left: 0px;
+            }
+  
+  
+            a{
+              display: block;
+              color: rgb(255, 255, 255);
+              background: linear-gradient(to right, #FF2E47, #FFAD88);
+              padding: 20px 66px 16px 66px;
+              display: block;
+              transition: 0.6s;
+              padding: 20px 0px 16px 0px;    
+              text-align: center; 
+              border-radius: 30px;
+              box-shadow: 2px 2px 3px rgba(0,0,0,0.16);
+              letter-spacing: 0.4px;
+      
+          
+              
+              @include pc {
+                padding: 15px 45px;
+                margin-top:auto; 
+                margin-bottom: auto;
+              }
+  
+          
+  
+            }/*a*/
+  
+              a:hover{
+                opacity: 0.7;
+                transition: 0.6s;
+              }/*a*/
+  
+          }/*nav-btn*/
+  
+          .nav-btn:hover{
+            transition: 1s;
+          }
+  
+  
+          
+        }/*ul*/
+      }/*header-nav*/
+  
+  
+  
+  
+  .btn-gnavi{
+  
+    display: none;
+  
+    @include tab{
+      display: initial;
+        position: fixed;
+        top: 25px;
+        right: 4%;
+        width: 30px;
+        height: 24px;
+        z-index: 4;
+        cursor: pointer;
+        transition: all 400ms;
+        -webkit-transition:all 400ms;
     }
-
-  }/*span*/
-
-  span:nth-of-type(2){
-
-      @include tab{
-          top: 10px;
-          z-index: 1000;
-          width: 40px;
-      }
-
-      @include sp{
-        width: 17px;
-        top: 5px;
+  
+    @include sp{
+      top: 20px;
+      right: 7%;
     }
-
-  }/*span*/
-
-  span:nth-of-type(3){
-      @include tab{
-          top: 20px;
-          z-index: 1000;
-          width: 40px;
-      }
-
-      @include sp{
-        width: 17px;
-        top: 10px;
+  
+  
+  }
+  
+  
+  .btn-gnavi{
+    z-index: 1000;
+  
+    @include sp-second{
+  
     }
-
-  }/*span*/
+     
   
 
-}/*btn-gnavi*/
+    span{
+        @include tab{
+            position: absolute;
+            height: 3px;
+            background: black;
+            -webkit-transition: all 400ms;
+            transition: all 400ms;
+            right: 0;
+          }
+  
+          @include sp-second{
+            width: 45px;
+          }
+    
+  }/*span*/
+  
+    span:nth-of-type(1){
+  
+        @include tab{
+            top: 0;
+            z-index: 1000;
+            width: 40px;
+        }
+  
+        @include sp{
+          width: 17px;
+      }
+  
+    }/*span*/
+  
+    span:nth-of-type(2){
+  
+        @include tab{
+            top: 10px;
+            z-index: 1000;
+            width: 40px;
+        }
+  
+        @include sp{
+          width: 17px;
+          top: 5px;
+      }
+  
+    }/*span*/
+  
+    span:nth-of-type(3){
+        @include tab{
+            top: 20px;
+            z-index: 1000;
+            width: 40px;
+        }
+  
+        @include sp{
+          width: 17px;
+          top: 10px;
+      }
+  
+    }/*span*/
+    
+  
+  }/*btn-gnavi*/
+  
+  
+  
+ .btn-gnavi.hb-open span:nth-of-type(1) {
+    -webkit-transform: translateY(10px) rotate(-45deg);
+    transform: translateY(10px) rotate(-45deg);
+    transition: 0.5s;
 
+    @include sp{
+      -webkit-transform: translateY(5px) rotate(-45deg);
+      transform: translateY(5px) rotate(-45deg);
+    }
 
+  }
+  .btn-gnavi.hb-open span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .btn-gnavi.hb-open span:nth-of-type(3) {
+    -webkit-transform:translateY(-10px) rotate(230deg);
+    transform: translateY(-10px) rotate(45deg);
+    transition: 0.5s;
+    width: 40px;
 
-
-.btn-gnavi.hb-open span:nth-of-type(1) {
-  -webkit-transform: translateY(10px) rotate(-45deg);
-  transform: translateY(10px) rotate(-45deg);
-  transition: 0.5s;
-}
-.btn-gnavi.hb-open span:nth-of-type(2) {
-  opacity: 0;
-}
-.btn-gnavi.hb-open span:nth-of-type(3) {
-  -webkit-transform:translateY(-10px) rotate(230deg);
-  transform: translateY(-10px) rotate(45deg);
-  transition: 0.5s;
-  width: 40px;
-
-}
-
-
-  }/*header-inner*/
-
-}/*header*/
+    @include sp{
+      width: 17px;
+      -webkit-transform:translateY(-5px) rotate(230deg);
+      transform: translateY(-5px) rotate(45deg);  
+    }
+  }
+    }/*header-inner*/
+  }/*header*/
+  
+  
 
 
 
@@ -558,7 +579,7 @@ header{
             margin-bottom: 47px;
 
             @include sp{
-                margin-bottom: 35px;
+                margin-bottom: 20px;
             }
 
          
@@ -622,7 +643,6 @@ header{
                 }
 
                 @include sp-second{
-                    height: 150px;
                 }
 
 
@@ -654,6 +674,9 @@ header{
               letter-spacing: 0.9px;
               font-size: 18px;
               padding: 17px 0px;
+              letter-spacing: 1em;
+              text-align: center;
+              text-indent:1em;
 
               @include sp{
                 font-size: 16px;
@@ -709,7 +732,7 @@ header{
 
     .sub-letter{
       font-size: 16px;
-
+      font-weight: bold;
 
     @include sp{
       font-size: 13px;
@@ -786,7 +809,7 @@ header{
         background-color: rgb(255, 255, 255);
         text-align: center;
         height: 133px;
-        padding-top: 40px;
+        padding-top: 30px;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
 
@@ -813,6 +836,17 @@ header{
 
 
         img{
+          margin-right: 10px;
+          @include tab{
+            margin-right: 7px;
+            width: 18px;
+          }
+
+          @include sp{
+            width: 16px;
+          }
+
+
         }/*img*/
 
           .time{
@@ -827,6 +861,12 @@ header{
 
 
       }/*a*/  
+
+      a:hover{
+        transition: .8s;
+        opacity: 0.8;
+      }
+  
     }
 
     .right_button{
@@ -860,6 +900,12 @@ header{
       }
     
     }/*a*/
+
+    a:hover{
+      transition: .8s;
+      opacity: 0.8;
+    }
+
 
     }
   }/*button_block*/
@@ -937,9 +983,17 @@ background-color: rgba(54,78,96,0.45);
               color: white;
               padding-right: 25px;
               padding-left: 25px;
+              font-size: 14px;
+              @include font-type();
             }
 
         }/*li*/
+
+        li:hover{
+          transition: .3s;
+          opacity: .8;
+        }
+
       
           li:last-child{
             border-right: none;
@@ -996,16 +1050,21 @@ background-color: rgba(54,78,96,0.45);
               color: white;
               padding-right: 15px;
               padding-left: 15px;
+              @include font-type();
+
             }
 
             #first-nav{
                 padding-left: 0px;
             }
-
-  
             
         }/*li*/
       
+        li:hover{
+          transition: .3s;
+          opacity: .8;
+        }
+
           li:last-child{
             border-right: none;
           }
